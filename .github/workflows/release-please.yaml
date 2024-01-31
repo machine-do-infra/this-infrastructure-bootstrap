@@ -18,7 +18,7 @@ jobs:
         id: release
         with:
           token: ${{ secrets.release_please_token }}
-          release-type: terraform
+          release-type: simple
       - name: Enable Pull Request Auto-merge
         if: steps.release.outputs.prs_created && steps.release.outputs.pr != null
         run: gh pr merge --squash --auto ${{ fromJson(steps.release.outputs.pr).number }}
