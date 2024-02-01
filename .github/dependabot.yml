@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directory: "modules/enterprise-organization"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "16:00"
+#  - package-ecosystem: "bundler"
+#    directory: "modules/organization-infrastructure-bootstrap"
+#    schedule:
+#      interval: "weekly"
+#      day: "sunday"
+#      time: "16:00"
